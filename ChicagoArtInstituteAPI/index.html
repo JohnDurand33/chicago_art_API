@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Themed Business Style Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar display-flex container-fill">
+    <a class="navbar-brand logo" href="#">My Favorite Chicago Art Instititutes Pieces</a>
+    <ul class="nav-items">
+    <a class="nav-link" href="#">Home</a>
+    <a class="nav-link" href="#">About</a>
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Services</a>
+    <a class="nav-link" id="signup" href="#">Sign Up</a>
+    <button id="loginButton" onclick="toggleLogin()">Login</button>
+    </ul>
+</nav>
+
+
+
+<!-- <nav class="navbar">
+    <div class="logo">YourLogo</div>
+    <div class="nav-items">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Services</a>
+        <a href="#" class="nav-link" id="signup">Sign Up</a>
+        <button id="loginButton" onclick="toggleLogin()">Login</button>
+    </div>
+</nav> -->
+
+<main class="grid-container">
+    <!-- Generating 3x3 grid -->
+    <script>
+        for (let i = 1; i <= 9; i++) {
+            document.write(`<div class="grid-item" id=${i}></div>`);
+        }
+    </script>
+</main>
+
+<footer>
+    <p>Company © 2024. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
