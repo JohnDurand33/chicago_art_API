@@ -1,6 +1,6 @@
-*{
+/* *{
     border: 1px solid red;
-}
+} */
 
 body {
     margin: 0;
@@ -40,6 +40,15 @@ body {
     text-decoration-line: none;
 }
 
+nav>h2 {
+    font-family: Arial, sans-serif;
+    color: brown;
+    text-shadow: -1px -1px 0 #000,  
+                 1px -1px 0 #000,  
+                 -1px 1px 0 #000,  
+                 1px 1px 0 #000;
+}
+
 /* Base styles for very small screens: 1 column */
 .grid-container {
     display: grid;
@@ -47,18 +56,22 @@ body {
     gap: 20px;
     padding: 60px 20px 20px;
     padding-top: 110px;
+    justify-content: center;
     /* Other styling */
 }
 
 .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #333;
-    padding: 20px;
     border-radius: 5px;
-    height: 20vh
 }
 
-.grid-item#1 {
-    background-color: #007bff;
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 footer {

@@ -10,6 +10,6 @@ function toggleLogin() {
         signupButton.style.display = 'none';
     } else {
         loginButton.textContent = 'Login';
-        signupButton.style.display = 'block';
+        signupButton.style.display = 'inline';
     }
 }
