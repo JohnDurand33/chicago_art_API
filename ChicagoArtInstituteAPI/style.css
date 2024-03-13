@@ -40,12 +40,14 @@ body {
     text-decoration-line: none;
 }
 
+/* Base styles for very small screens: 1 column */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 60px 20px 20px;
     padding-top: 110px;
+    /* Other styling */
 }
 
 .grid-item {
@@ -67,4 +69,18 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/*larger phones, small tablets*/
+@media (min-width: 400px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*tablets, desktops */
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
