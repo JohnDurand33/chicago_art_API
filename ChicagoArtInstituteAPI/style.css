@@ -53,6 +53,7 @@ nav>h2 {
                  1px 1px 0 #000;
 }
 
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
