@@ -62,6 +62,17 @@
     <figure class="grid-item">
         <img id="152342" onclick="clickedEvent(this.id)" src="imgs/Tires_city-Everett_Shinn.jpg" alt="">
     </figure>
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-header"> 
+                <span class="close-btn">&times;</span>
+                <h2>Artwork Details</h2>
+            </div>
+            <div id="artwork-details">
+                <!-- Artwork details will be injected here -->
+            </div>   
+        </div>
+    </div>
     <!-- <script>
         for (let i = 1; i <= 9; i++) {
             document.write(`<div class="grid-item" id=${i}></div>`);

@@ -18,13 +18,15 @@ body {
     padding: 20px;
     position: fixed;
     width: 100vw;
-    height: 50px;
+    height: 70px;
     top: 0;
     z-index: 1000;
 }
-.nav-items{
-    padding-right: 50px;
+
+.nav-items {
+    margin-right: 50px;
 }
+
 .nav-items .nav-link, .nav-items button {
     justify-self: auto;
     color: #ffffff;
@@ -77,6 +79,60 @@ nav>h2 {
     object-fit: cover;
 }
 
+.popup {
+    position: fixed; /* Use fixed positioning */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Initially hidden */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+    box-sizing: border-box;
+}
+
+.popup-header {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+/* Styles for the popup content */
+.popup-content {
+    width: 50%; /* Adjust width as needed */
+    max-width: 400px; /* Maximum width */
+    background: white;
+    color: #121212;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    text-align: center; /* Center text */
+    position: relative; /* For positioning the close button */
+    box-sizing: border-box;
+}
+
+.popup, .popup-content {
+    margin: 0;
+    padding: 0;
+    /* your other styles */
+}
+
+/* Style for the close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
 footer {
     background-color: #1a1a1a;
     color: grey;
@@ -88,15 +144,26 @@ footer {
 }
 
 /*larger phones, small tablets*/
-@media (min-width: 400px) {
+@media (min-width: 600px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .navbar a, .navbar h2, .navbar button {
+        font-size: 16px; 
+        padding: 15px 10px; 
+    }
 }
 
+
 /*tablets, desktops */
-@media (min-width: 600px) {
+@media (min-width: 786px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navbar a, .navbar h2, .navbar button {
+        font-size: 18px;
+        padding: 20px 15px; 
     }
 }
