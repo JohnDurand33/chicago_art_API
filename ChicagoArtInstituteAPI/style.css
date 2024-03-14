@@ -53,7 +53,6 @@ nav>h2 {
                  1px 1px 0 #000;
 }
 
-/* Base styles for very small screens: 1 column */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -62,7 +61,6 @@ nav>h2 {
     padding-top: 110px;
     justify-content: center;
     overflow: hidden;
-    /* Other styling */
 }
 
 .grid-item {
@@ -80,15 +78,15 @@ nav>h2 {
 }
 
 .popup {
-    position: fixed; /* Use fixed positioning */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: none; /* Initially hidden */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
     box-sizing: border-box;
 }
 
@@ -104,26 +102,23 @@ nav>h2 {
     border-top-right-radius: 7px;
 }
 
-/* Styles for the popup content */
 .popup-content {
-    width: 50%; /* Adjust width as needed */
-    max-width: 400px; /* Maximum width */
+    width: 50%;
+    max-width: 400px;
     background: white;
     color: #121212;
     border-radius: 7px;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
-    text-align: center; /* Center text */
-    position: relative; /* For positioning the close button */
+    text-align: center;
+    position: relative; 
     box-sizing: border-box;
 }
 
 .popup, .popup-content {
     margin: 0;
     padding: 0;
-    /* your other styles */
 }
 
-/* Style for the close button */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -143,7 +138,6 @@ footer {
     bottom: 0;
 }
 
-/*larger phones, small tablets*/
 @media (min-width: 600px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -155,8 +149,6 @@ footer {
     }
 }
 
-
-/*tablets, desktops */
 @media (min-width: 786px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
